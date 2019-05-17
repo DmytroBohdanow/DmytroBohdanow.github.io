@@ -1,0 +1,78 @@
+@font-face {
+    font-family: FFF Tusj;
+    src: url(fonts/FFFTusj.ttf);
+   }
+body {
+    background-color: whitesmoke;
+    font-family: FFF Tusj;
+}
+
+ul {
+    list-style-type: none;
+    height: 100%;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#upper_menu {
+    position: relative;
+    background-color:lightgrey;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0;
+}
+#menu_icon {
+    position: absolute;
+    width: 3%;
+    height: 50%;
+    top: 45%;
+}
+.upper_menu_item {
+    background-color: lightgrey;
+    position: relative;
+    height: 100%;
+    display: inline-block;
+    margin: 0;
+    text-align: justify;
+    cursor: pointer;
+}
+#menu_list {
+    display: none;
+    position:absolute;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    right: 0px;
+    top: 100%;
+    margin:0;
+}
+.menu_list_item {
+    position: relative;
+    margin: 0;
+    height: 100%;
+    background-color: lightgrey;
+    cursor: pointer;
+}
+#menu,#blog,#contact {
+    width: 20%;
+    float: left;
+    font-size: 24px;
+    border-right: 1px solid gray;
+}
+#settings {
+    float: right;
+    width: 4%;
+    text-align: center;
+    border-right: 1px solid gray;
+}
+#settings_block {
+    display: none;
+    position: relative;
+    background-color: lightgrey;
+    width:300%;
+    height:300%;
+    right:200%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}

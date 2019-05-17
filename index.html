@@ -6,8 +6,29 @@
         <meta name="author" content="Dmytro Bohdanov">
         <title></title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
     </head>
     <body>
-        <h1>Hello Maria</h1>
+        <div id="upper_menu">
+            <ul>
+                <li id="menu" class="upper_menu_item"></br>Menu
+                    <ul class="upper_menu_item" id="menu_list">
+                        <li class="menu_list_item"></li>
+                        <li class="menu_list_item"></li>
+                        <li class="menu_list_item"></li>
+                        <li class="menu_list_item"></li>
+                    </ul>
+                </li>
+                <li id ="blog" class="upper_menu_item"></br>Blog
+                </li>
+                <li id="contact" class="upper_menu_item"></br>Contact
+                </li>
+                <li id="settings" class="upper_menu_item"></br><img src="Settings_icon.png" width="60%" height="60%" alt="Settings" />
+                    <div id="settings_block"></div>
+                </li>
+            </ul>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
