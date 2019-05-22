@@ -1,9 +1,9 @@
 @font-face {
     font-family: FFF Tusj;
-    src: url(https://dmytrobohdanow.github.io/fonts/FFFTusj.ttf);
+    src: url(https://dmytrobohdanow.github.io//fonts/FFFTusj.ttf);
    }
 body {
-    background-color: whitesmoke;
+    background: whitesmoke url(https://dmytrobohdanow.github.io//images/Day_Theme_Background.jpg) repeat-y;
     font-family: FFF Tusj;
 }
 
@@ -15,18 +15,13 @@ ul {
 }
 
 #upper_menu {
-    position: relative;
+    position: fixed;
     background-color:lightgrey;
     width: 100%;
     height: 60px;
-    margin: 0 auto;
-    padding: 0;
-}
-#menu_icon {
-    position: absolute;
-    width: 3%;
-    height: 50%;
-    top: 45%;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 .upper_menu_item {
     background-color: lightgrey;
@@ -36,6 +31,7 @@ ul {
     margin: 0;
     text-align: justify;
     cursor: pointer;
+    top: -27%;
 }
 #menu_list {
     display: none;
@@ -53,6 +49,8 @@ ul {
     height: 100%;
     background-color: lightgrey;
     cursor: pointer;
+    text-align: justify;
+    
 }
 #menu,#blog,#contact {
     width: 20%;
@@ -75,4 +73,39 @@ ul {
     right:200%;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
+}
+#greeting {
+    position: absolute;
+    text-align: center;
+    font-size: 65px;
+    top: 20%;
+    left: 15%;
+    opacity: 0;
+}
+#invitation {
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+    top: 85%;
+    left: 39%;
+    opacity: 0;
+}
+#text_block {
+    background-color: lightgrey;
+    opacity: 0;
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 100%;
+    left: 15%;
+}
+#contact_block {
+    background-color: lightgrey;
+    opacity: 0;
+    position: absolute;
+    width: 70%;
+    height: 25%;
+    top: 180%;
+    margin-bottom: 50px;
+    left: 15%;
 }
