@@ -105,7 +105,8 @@ ul {
     background-color: rgba(211,211,211,0.6);
     opacity: 0;
     position: absolute;
-    width: 70%;
+    width: 100%;
+    text-align: right;
     top: 20%;
     height: 70%;
     left: 15%;
