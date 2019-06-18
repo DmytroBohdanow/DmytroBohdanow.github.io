@@ -3,17 +3,15 @@
     src: url(https://dmytrobohdanow.github.io//fonts/FFFTusj.ttf);
    }
 body {
-    background: whitesmoke url(https://dmytrobohdanow.github.io//images/Day_Theme_Background.jpg);
+    background: whitesmoke;
     font-family: FFF Tusj;
 }
-
 ul {
     list-style-type: none;
     height: 100%;
     padding-left: 0;
     margin-left: 0;
 }
-
 #upper_menu {
     position: fixed;
     background-color:lightgrey;
@@ -23,7 +21,6 @@ ul {
     left: 0;
     z-index: 10;
 }
-
 .upper_menu_item {
     background-color: lightgrey;
     position: relative;
@@ -34,7 +31,6 @@ ul {
     cursor: pointer;
     top: -27%;
 }
-
 #menu_list {
     display: none;
     position:absolute;
@@ -45,7 +41,6 @@ ul {
     top: 100%;
     margin:0;
 }
-
 .menu_list_item {
     position: relative;
     margin: 0;
@@ -55,21 +50,18 @@ ul {
     text-align: justify;
     
 }
-
 #menu,#blog,#contact {
     width: 20%;
     float: left;
-    font-size: 24px;
+    font-size: 1.5rem;
     border-right: 1px solid gray;
 }
-
 #settings {
     float: right;
     width: 4%;
     text-align: center;
     border-right: 1px solid gray;
 }
-
 #settings_block {
     display: none;
     position: relative;
@@ -80,7 +72,6 @@ ul {
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
 }
-
 #contact_block {
     display: none;
     position: relative;
@@ -91,36 +82,68 @@ ul {
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
 }
-
 #greeting {
+    width: 80%;
+    height: 50%;
     position: absolute;
     text-align: center;
-    font-size: 65px;
-    top: 20%;
-    left: 15%;
+    vertical-align: center;
+    font-size: 2.5rem;
+    top: 35%;
+    left: 10%;
     opacity: 0;
+    border: 2px solid black;
 }
-
-#text_block {
-    background-color: rgba(211,211,211,0.6);
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    text-align: right;
-    top: 20%;
-    height: 70%;
-    left: 15%;
-}
-
-#skills_block, #language_block, #experience_block {
+#skills_block, #language_block, #experience_block, #learn_block {
     opacity: 0;
     position: absolute;
     background-color: rgba(211,211,211,0.6);
-    width: 25%;
-    height: 80%;
+    width: 20%;
     top: 110%;
+    text-align: center;
+    font-size: 1.5rem;
 }
-
-#skills_block {left:7%}
-#language_block {left:37%}
-#experience_block {left:67%}
+#skills_block {left:3%}
+#skills_list, #language_list, #learn_list, #experience_list {text-align: left}
+#learn_block {left:27%}
+#language_block {left:52%}
+#experience_block {left:77%}
+#projects_block {
+    position: absolute;
+    top: 200%;
+    left: 20%;
+    width: 60%;
+    height: 80%;
+    margin-bottom: 30%;
+    text-align: center;
+}
+#project_1, #project_2, #project_3, #project_4, #project_5, #project_6 {
+    position: relative;
+    border: 2px solid black;
+    width: 25%;
+    height: 25%;
+    margin-top: 5%;
+}
+#project_1 {
+    left: 5%;
+}
+#project_2 {
+    left: 35%;
+    top: -33.5%;
+}
+#project_3{
+    left: 66%;
+    top: -67%;
+}
+#project_4{
+    left: 5%;
+    top: -67%;
+}
+#project_5{
+    left: 35%;
+    top: -100.5%;
+}
+#project_6{
+    left: 66%;
+    top: -134%;
+}

@@ -1,7 +1,5 @@
 $(document).ready(function(){
     $("#greeting").delay(1000).fadeTo(2500, 1);
-    $("#greeting").delay(2000).fadeOut(2000);
-    $("#text_block").delay(4000).fadeTo(2000, 1);
     $('.upper_menu_item, .menu_list_item, #settings_block, #contact_block').hover(function() {
         $(this).stop().animate({ backgroundColor: "#A9A9A9"}, 400);
     },function() {
@@ -36,9 +34,9 @@ $(document).ready(function(){
     $(window).scroll(function(){
             if($(window).scrollTop()>200){
             $("#skills_block").delay(500).fadeTo(2000, 1);
-            $("#language_block").delay(1000).fadeTo(2000, 1);
-            $("#experience_block").delay(1500).fadeTo(2000, 1);
-        
+            $("#learn_block").delay(1000).fadeTo(2000, 1);
+            $("#language_block").delay(1500).fadeTo(2000, 1);
+            $("#experience_block").delay(2000).fadeTo(2000, 1);
             }
         });
     });
