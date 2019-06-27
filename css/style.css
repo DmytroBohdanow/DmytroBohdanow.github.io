@@ -27,7 +27,7 @@ ul {
     height: 100%;
     display: inline-block;
     margin: 0;
-    text-align: justify;
+    text-align: left;
     cursor: pointer;
     top: -27%;
 }
@@ -83,16 +83,62 @@ ul {
     border-bottom: 1px solid gray;
 }
 #greeting {
-    width: 80%;
-    height: 50%;
+    width: 90%;
+    height: 55%;
     position: absolute;
     text-align: center;
     vertical-align: center;
     font-size: 2.5rem;
     top: 35%;
-    left: 10%;
+    left: 5%;
     opacity: 0;
-    border: 2px solid black;
+    border-bottom: 1px solid black;
+}
+#arrow_left, #arrow_right {
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    vertical-align: middle;
+    max-width: 10%; 
+    min-height: 100%;
+    background: rgba(211,211,211,0.1);
+    transition: background 1s ease-out;
+    top: 0em;
+    color: gray;
+    cursor: pointer;
+}
+#arrow_left {left: 0}
+#arrow_right {right: 0}
+#arrow_right:hover, #arrow_left:hover {background: rgba(211,211,211,0.8);}
+#first_slide, #second_slide, #third_slide {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+}
+#second_slide, #third_slide {
+    font-size: 1.1rem;
+    width: 80%;
+    margin-left: 10%;
+}
+#first_slide {opacity: 1}
+#second_slide {opacity: 0}
+#third_slide {opacity: 0}
+#my_foto {
+    position: absolute;
+    left: 70%;
+    top: -10%;
+    width: 15%;
+    height: 80%;
+}
+#my_foto img {
+    width: 100%;
+    height: 100%;
+}
+#add_to_foto {
+    font-size: 1rem;
+    opacity: 0;
+    margin-top: -15%;
+    color: white;
 }
 #skills_block, #language_block, #experience_block, #learn_block {
     opacity: 0;
@@ -109,41 +155,38 @@ ul {
 #language_block {left:52%}
 #experience_block {left:77%}
 #projects_block {
+    opacity: 0;
     position: absolute;
-    top: 200%;
+    top: 180%;
     left: 20%;
     width: 60%;
     height: 80%;
-    margin-bottom: 30%;
+    margin-bottom: 5%;
     text-align: center;
+    border-bottom: 1px solid black;
 }
-#project_1, #project_2, #project_3, #project_4, #project_5, #project_6 {
-    position: relative;
-    border: 2px solid black;
-    width: 25%;
-    height: 25%;
-    margin-top: 5%;
-}
-#project_1 {
+#prj_first_col {
+    position: absolute;
+    height: 100%;
+    width: 50%;
     left: 5%;
+    margin-top: 0;
 }
-#project_2 {
-    left: 35%;
-    top: -33.5%;
+#prj_second_col {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 45%;
+    margin-top: 0;
 }
-#project_3{
-    left: 66%;
-    top: -67%;
+#prj_first_col img, #prj_second_col img {
+    width: 50%;
+    height: 30%;
+    cursor: pointer;
+    transition: all .5s;
 }
-#project_4{
-    left: 5%;
-    top: -67%;
+#prj_first_col img:hover, #prj_second_col img:hover {
+    width: 70%;
+    height: 50%;
 }
-#project_5{
-    left: 35%;
-    top: -100.5%;
-}
-#project_6{
-    left: 66%;
-    top: -134%;
-}
+#signature {margin-top: 60%};

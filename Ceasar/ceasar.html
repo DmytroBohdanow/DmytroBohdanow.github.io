@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Ceasar Encoder and Decoder">
+        <meta name="author" content="Dmytro Bohdanov">
+        <title>Ceasar Encoder</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    </head>
+<body>
+<h1 id="heading">Ceasar Cipher</h1>
+<h2 id="wiki">In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence &copy Wikipedia</h2>
+<div id="text_area">
+    <p>Encoder</br><textarea id="text"></textarea><div id="encode_button" href="#result" class ="action_block">Encode</div><div id="clean_button" class ="action_block">Clean</div>
+        <div id="direction" class="action_block">
+            <select id="direction_value">
+                <option value="left">To the left</option>
+                <option value="right">To the right</option>
+            </select>
+            <input type="number" min='1' max='26' value='1' id="number"/>
+        </div></p>
+</div>
+<div id="result_area">
+<div class="action_block" id="copy_button"><div id="copy_result">copied!</div>Copy</div>
+<div class="action_block"  href="#text_area" id="repeat_button">Once more</div>
+<div id="result" class="result_text"></div>
+</div>
+<div id="footer">
+    &copy; Dmytro Bohdanov 2019
+</div>
+<script src="script.js"></script>
+<script src="effects.js"></script>
+</body>
+</html>

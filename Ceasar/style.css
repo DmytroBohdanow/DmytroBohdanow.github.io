@@ -1,0 +1,101 @@
+@font-face {
+    font-family: PRAEBRG;
+    src: url(fonts/PRAEBRG_.TTF);
+}
+body {
+    font-family: PRAEBRG;
+    background-image: url(Background.jpg);
+    background-size: cover;
+}
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    cursor: pointer;
+}
+#wiki {
+    text-align: center;
+    font-size: 1.2rem;
+    display: none;
+}
+p {
+    font-size: 3rem;
+}
+textarea {
+    position: relative;
+    width: 100%;
+    font-size: 24px;
+    height: 200px;
+    background-color: rgba(224,224,224,0.5);
+    overflow: auto;
+}
+.action_block {
+    position: relative;
+    width: 30%;
+    height: 15%;
+    top: -12%;
+    font-size: 2rem;
+    margin: 0;
+    background-color:#D3D3D3;
+}
+#encode_button { left: 0;}
+#clean_button { 
+    left: 30%;
+    top: -27%;
+}
+#direction {
+    left: 60%;
+    top: -42%;
+}
+#direction_value{background-color: rgba(224,224,224,0.8);}
+#number{background-color: rgba(224,224,224,0.8);}
+#text_area {
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    left: 10%;
+}
+#copy_button { top: -16%;}
+#copy_result {
+    position: relative;
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 30%;
+    font-size: 1rem;
+    top: -30%;
+    display: none;
+}
+#repeat_button {
+    top: -31%;
+    left: 30%;
+}
+#result_area {
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    left: 10%;
+    top: 115%;
+    margin-bottom: 5%;
+}
+#result {
+    position: relative;
+    background-color: rgba(224,224,224,0.5);
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    top: -30%;
+    font-size: 34px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#footer {
+    position: fixed;
+    left: 0; 
+    bottom: 0;
+    padding: 10px;
+    background: rgba(224,224,224,0.5);
+    color: black;
+    width: 100%;
+    z-index: -1;
+    text-align: center;
+}
+#result_area {display: none;}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Simple calculator, builded with vanilla JS">
+        <meta name="author" content="Dmytro Bohdanov">
+        <title>CalculatorJS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id='heading'>Calculator</div></br>
+            <div id='calculating'></div></br>
+    <div id='numbers'>
+        <table>
+             <tr>
+                <td><button class='number' value=1>1</button></td>
+                <td><button class='number' value=2>2</button></td>
+                <td><button class='number' value=3>3</button></td>
+            </tr>
+            <tr>
+                <td><button class='number' value=4>4</button></td>
+                <td><button class='number' value=5>5</button></td>
+                <td><button class='number' value=6>6</button></td>
+            </tr>
+            <tr>
+                <td><button class='number' value=7>7</button></td>
+                <td><button class='number' value=8>8</button></td>
+                <td><button class='number' value=9>9</button></td>
+            </tr>
+            <tr>
+                <td><button class='number' value=0>0</button></td>
+                <td colspan="2"><button id='calc'>Calculate</button></td> 
+             </tr>
+         </table>
+        <div id='actions'>
+         <table>
+            <tr>
+                <td><button class='symbol' value="+">+</button></td>
+                <td><button class='symbol' value="-">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="symbol" value="*">*</button></td>
+                <td><button class="symbol" value="/">/</button></td>
+            </tr>
+            <tr>
+                <td><button class="symbol" value="(">(</button></td>
+                <td><button class="symbol" value=")">)</button></td>
+            </tr>
+            <tr>
+                <td><button id='clear'>Clear</button></td>
+                <td><button class="symbol" value=".">.</button></td>     
+            </tr>
+            <tr>
+                <td colspan="2"><button id="backspace">backspace</button></td>
+            </tr>
+         </table>
+        </div>
+        <div id="result">
+        </div>
+    </div>
+    <div id="footer">
+        &copy; Dmytro Bohdanov 2019
+       </div>
+        <script src="script.js"></script>
+    </body>
+</html>

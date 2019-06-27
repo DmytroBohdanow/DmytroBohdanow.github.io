@@ -1,0 +1,85 @@
+body {
+    background-color: #667486;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+tr,td {
+    width: 33%;
+    height:33%;
+}
+#numbers{
+    position: relative;
+    width: 300px;
+    margin: auto;
+    text-align:center;
+}
+
+#calculating {
+    height: 40px;
+    width: 300px;
+    font-size: 38px;
+    background-color: whitesmoke;
+    margin: auto;
+    text-align:right;
+}
+button {
+    height:100%;
+    width:100%;
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    background: #3c2c46;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover,
+button:focus,
+#footer:hover,
+#result:hover {
+    background: #667486;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+#actions {
+    position: relative;
+    width:50%;
+    left: 300px;
+    top: -209px;
+}
+#heading {
+    font-size: 58px;
+    text-align: center;
+}
+#footer {
+    position: fixed;
+    left: 0; bottom: 0;
+    padding: 10px;
+    background: #3c2c46;
+    color: black;
+    width: 100%;
+    text-align: center;
+   }
+#result {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    background-color: #3c2c46;
+    font-size:40px;
+    margin:auto;
+    top: 208px;
+}
+button,
+#result,
+#footer {
+    transition: background 200ms ease-in-out, 
+    transform 150ms ease;
+}

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="description" content="Portfolio page">
         <meta name="author" content="Dmytro Bohdanov">
-        <title></title>
+        <title>Dmytro Bohdanov</title>
         <link rel="stylesheet" href="https://dmytrobohdanow.github.io//css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
@@ -14,10 +14,9 @@
             <ul>
                 <li id="menu" class="upper_menu_item"></br>Menu
                     <ul class="upper_menu_item" id="menu_list">
-                        <li class="menu_list_item">About me</li>
-                        <li class="menu_list_item">My benefits</li>
-                        <li class="menu_list_item">My projects</li>
-                        <li class="menu_list_item">My plans & ambitions</li>
+                        <li class="menu_list_item" href="#greeting">About me</li>
+                        <li class="menu_list_item" href="#skills_block">My skills</li>
+                        <li class="menu_list_item" href="#projects_block">My projects</li>
                     </ul>
                 </li>
                 <li id="blog" class="upper_menu_item"></br>Blog
@@ -31,9 +30,22 @@
             </ul>
         </div>
         <div id="greeting">
-        <h1>Hello!</h1>
-        <p>My name is Dmytro</p>
-    
+        <div id="first_slide">
+            <h1>Hello!</h1>
+            <p>My name is Dmytro</p>
+            <div id="my_foto">
+                <img src="images/My_foto.png" />
+                <p id="add_to_foto">It's me</p>
+            </div>
+        </div>
+        <div id="second_slide">
+            <h1></br>I'm a junior frontend developer, and this is my page, where you can find some information about me</h1>
+        </div>
+        <div id="third_slide">
+            <h1></br>You can also find here a couple of my projects, blog about my searching a job abroad and ways to contact me. Enjoy!</h1>
+        </div>
+        <div id="arrow_left"></br></br></br>&lt;</div>
+        <div id="arrow_right"></br></br></br>&gt;</div>
         </div>
         <div id="skills_block">My skills
             <ul id="skills_list">
@@ -70,14 +82,29 @@
         </ul>
     </div>
     <div id="projects_block">
-            <h1>My projects</h1>
-        <div id="project_1"></div>
-        <div id="project_2"></div>
-        <div id="project_3"></div>
-        <div id="project_4"></div>
-        <div id="project_5"></div>
-        <div id="project_6"></div>
+            <h1 text-align="center">My projects</h1>
+    <ul id="prj_first_col">
+        <li>
+            <p>Ceasar encoder</p>
+            <img src="images/Ceasar.jpg" alt="Ceasar"/>
+        </li>
+        <li>
+            <p>Words counter</p>
+            <img src="images/Counter.jpg" alt="COunter"/>
+        </li>
+    </ul>
+    <ul id="prj_second_col">
+            <li>
+                <p>This page</p>
+                <img src="images/Page.jpg" alt="Page"/>
+            </li>
+            <li>
+                <p>Calculator</p>
+                <img src="images/Calculator.jpg" alt="Calculator"/>
+            </li>
+        </ul>
+    <p id="signature">Dmytro Bohdanov &copy; 2019</p>
     </div>
-        <script src="https://dmytrobohdanow.github.io//script.js"></script>
+        <script src="https://dmytrobohdanow.github.io/script.js"></script>
     </body>
 </html>
