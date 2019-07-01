@@ -12,6 +12,14 @@ ul {
     padding-left: 0;
     margin-left: 0;
 }
+a {
+    text-decoration: none;
+    color: black;
+    transition: 1s ease-out;
+}
+a:hover {
+    color: whitesmoke;
+}
 #upper_menu {
     position: fixed;
     background-color:lightgrey;
